@@ -1,0 +1,31 @@
+RAM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+rx_buffer                                                                         0x0260       8
+_base_y                                                                           0x0268       4
+
+EEPROM Allocation [bytes]
+Variable                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+
+Register Allocation
+Variable                                                                          Register  Size
+------------------------------------------------------------------------------------------------
+rx_wr_index                                                                       R5           1
+rx_rd_index                                                                       R4           1
+rx_counter                                                                        R7           1
+rx_buffer_overflow                                                                R2.0      1bit
+_lcd_x                                                                            R6           1
+_lcd_y                                                                            R9           1
+_lcd_maxx                                                                         R8           1
+
+FLASH Allocation [words]
+Function                                                                          Address   Size
+------------------------------------------------------------------------------------------------
+usart_rx_isr                                                                      0x0006E     35
+getchar                                                                           0x00091     19
+main                                                                              0x000A4     81
+_lcd_write_nibble_G100                                                            0x000F5     20
+_lcd_write_data                                                                   0x00109     12
+lcd_clear                                                                         0x00115     12
+lcd_init                                                                          0x00121     45
